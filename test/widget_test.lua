@@ -1,0 +1,5 @@
+local scene_2D = require("function_widget.scene_2D")
+local scene_2D_guiEditor = require("function_widget.scene_2D_guiEditor")
+local d2 = scene_2D_guiEditor:new(0, 0, 200, 200)
+gui:add_view(d2)
+print(d2:out_to_table())
