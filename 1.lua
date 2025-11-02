@@ -1,7 +1,6 @@
 --require('2')
 
 local data = require("2")
-
 gui:add_view(gui:load_layout(data))
 --print(gui)
 function love.draw()

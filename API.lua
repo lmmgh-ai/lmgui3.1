@@ -3,12 +3,12 @@ local button = require("view.button")
 local switch_button = require("view.switch_button")
 local slider = require("view.slider")
 local list = require("view.list")
---local list_free = require "list_free"
 local text = require("view.text")
 local edit_text = require("view.edit_text")
 local image = require("view.image")
 local select_button = require("view.select_button")
 local select_menu = require("view.select_menu")
+local dialog = require("container.dialog")
 --
 local line_layout = require("layout.line_layout")
 local gravity_layout = require("layout.gravity_layout")
@@ -38,7 +38,7 @@ local api = {
     list = list,
     slider = slider,
     image = image,
-    --list_free = list_free
+
     --
     line_layout = line_layout,
     gravity_layout = gravity_layout,
@@ -52,6 +52,7 @@ local api = {
     fold_container = fold_container,
     slider_container = slider_container,
     tree_manager = tree_manager,
+    dialog = dialog,
     --
     scene_2D = scene_2D,
     scene_2D_guiEditor = scene_2D_guiEditor,

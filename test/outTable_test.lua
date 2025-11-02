@@ -45,8 +45,13 @@ local lay = {
 
 
 lay2 = {
-    type = "sandbox",
-
+    type = "dialog",
+    title = "提示",
+    content = "这是一个对话框",
+    buttons = {
+        {"确定", function(self) print("用户点击了确定") end},
+        {"取消", function(self) print("用户点击了取消") end}
+    }
 }
 
 
